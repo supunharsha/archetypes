@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- ~ Copyright (c) 2015 WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ ~ Copyright (c) 2017 WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  ~
  ~ Licensed under the Apache License, Version 2.0 (the "License");
  ~ you may not use this file except in compliance with the License.
@@ -17,9 +17,13 @@
 
 <archetype-descriptor
         xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-        name="org.wso2.carbon.authenticator.connectors.email"
         xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <requiredProperties>
+        <requiredProperty key="user_store_name"/>
+        <requiredProperty key="base_user_store_name"/>
+    </requiredProperties>
 
     <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
@@ -28,19 +32,6 @@
                 <include>**/*.java</include>
             </includes>
         </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-            <directory>src/test/java</directory>
-            <includes>
-                <include>**/*.java</include>
-            </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-            <directory>src/main/resources/icon</directory>
-        </fileSet>
     </fileSets>
-
-    <requiredProperties>
-        <requiredProperty key="connector_name"/>
-    </requiredProperties>
 
 </archetype-descriptor>

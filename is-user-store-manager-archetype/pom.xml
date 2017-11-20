@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- ~ Copyright (c) 2016 WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ ~ Copyright (c) 2017 WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  ~
  ~ Licensed under the Apache License, Version 2.0 (the "License");
  ~ you may not use this file except in compliance with the License.
@@ -15,42 +15,34 @@
  ~ limitations under the License.
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.wso2.carbon.extension.archetype</groupId>
         <artifactId>carbon-extension-archetype</artifactId>
+        <groupId>org.wso2.carbon.extension.archetype</groupId>
         <version>2.0.4-SNAPSHOT</version>
     </parent>
 
-    <artifactId>org.wso2.carbon.extension.is.authenticator-archetype</artifactId>
-    <version>2.0.4-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
-    <name>WSO2 Carbon - Authenticator Archetype for Template</name>
-    <description>Platform Parent pom hold the properties, plugins which are required to build carbon components, carbon
-        features and products
-    </description>
-    <url>http://wso2.org</url>
+    <artifactId>org.wso2.carbon.extension.is.user.store.manager-archetype</artifactId>
+    <version>2.0.4-SNAPSHOT</version>
+    <name>WSO2 Carbon - User Store Manager Archetype for Template</name>
     <build>
         <extensions>
             <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ssh</artifactId>
-                <version>2.1</version>
-            </extension>
-            <extension>
                 <groupId>org.apache.maven.archetype</groupId>
                 <artifactId>archetype-packaging</artifactId>
-                <version>2.2</version>
+                <version>3.0.0</version>
             </extension>
         </extensions>
-
         <pluginManagement>
             <plugins>
                 <plugin>
                     <artifactId>maven-archetype-plugin</artifactId>
-                    <version>2.2</version>
+                    <version>3.0.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
