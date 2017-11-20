@@ -89,11 +89,11 @@
                         <Bundle-SymbolicName>${artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${artifactId}</Bundle-Name>
                         <Private-Package>
-                            org.wso2.sample.user.store.manager.internal
+                            ${package}.internal
                         </Private-Package>
                         <Export-Package>
-                            !org.wso2.sample.user.store.manager.internal,
-                            org.wso2.sample.user.store.manager.*,
+                            !${package}.internal,
+                            ${package}.*,
                         </Export-Package>
                         <Import-Package>
                             org.wso2.carbon.*,

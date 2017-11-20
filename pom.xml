@@ -41,7 +41,7 @@
                 <module>is-provisioning-connector-archetype</module>
                 <module>analytics-event-publisher-archetype</module>
                 <module>analytics-event-receiver-archetype</module>
-                <module>is-user-store-manager-archetype</module>
+                <module>is-jdbc-user-store-manager-archetype</module>
                 <module>siddhi-aggregator-archetype</module>
                 <module>siddhi-function-archetype</module>
                 <module>siddhi-stream-function-archetype</module>

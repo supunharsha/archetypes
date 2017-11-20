@@ -20,6 +20,10 @@
         xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
+    <requiredProperties>
+        <requiredProperty key="user_store_name"/>
+    </requiredProperties>
+
     <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
             <directory>src/main/java</directory>
@@ -28,9 +32,5 @@
             </includes>
         </fileSet>
     </fileSets>
-
-    <requiredProperties>
-        <requiredProperty key="user_store_name"/>
-    </requiredProperties>
 
 </archetype-descriptor>

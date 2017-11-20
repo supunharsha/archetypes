@@ -27,16 +27,11 @@
     </parent>
 
     <packaging>maven-archetype</packaging>
-    <artifactId>org.wso2.carbon.extension.is.user.store.manager-archetype</artifactId>
+    <artifactId>org.wso2.carbon.extension.is.jdbc.user.store.manager-archetype</artifactId>
     <version>2.0.4-SNAPSHOT</version>
-    <name>WSO2 Carbon - User Store Manager Archetype for Template</name>
+    <name>WSO2 Carbon - JDBC User Store Manager Archetype for Template</name>
     <build>
         <extensions>
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ssh</artifactId>
-                <version>2.1</version>
-            </extension>
             <extension>
                 <groupId>org.apache.maven.archetype</groupId>
                 <artifactId>archetype-packaging</artifactId>
